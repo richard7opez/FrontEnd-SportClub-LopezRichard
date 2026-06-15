@@ -2,143 +2,168 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SportClub</title>
-<link rel="stylesheet" href="css/style_index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportClub</title>
+    <link rel="stylesheet" href="./css/style_index.css">
 </head>
 
 <body>
 
-<header>
+    <header>
+        <div class="logo">
+            <img src="./assets/logo_empresa_letra_v1.png" alt="SportClub">
+        </div>
 
-<div class="logo">
-<img src="assets/logo_empresa_letra_v1.png" alt="SportClub">
-</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#planes">Planes</a>
+            <a href="#sobre">Sobre el Club</a>
+            <a href="#contacto">Contacto</a>
+            <a href="login.html" class="nav-login">Ingresar</a>
+        </nav>
+    </header>
 
-<nav>
-<a href="#inicio">Inicio</a>
-<a href="#planes">Planes</a>
-<a href="#beneficios">Beneficios</a>
-<a href="#contacto">Contacto</a>
-<a href="login.html">Login</a>
-</nav>
+    <main>
 
-</header>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="hero-label">ENTRENA · AVANZA · SUPÉRATE</p>
 
-<main>
+                <h1>Tu mejor versión comienza hoy</h1>
 
-<section class="hero" id="inicio">
+                <p>
+                    Entrena, reserva clases y mejora tu rendimiento con una
+                    plataforma deportiva moderna y fácil de usar.
+                </p>
 
-<h1>SportClub - Tu mejor versión comienza hoy</h1>
+                <div class="hero-actions">
+                    <a href="registro.html" class="boton boton-principal">
+                        Comenzar Ahora
+                    </a>
 
-<p>
-Entrena, reserva clases y mejora tu rendimiento con una plataforma moderna,
-deportiva y fácil de usar.
-</p>
+                    <a href="#planes" class="boton boton-secundario">
+                        Ver Planes
+                    </a>
+                </div>
+            </div>
+        </section>
 
-<a href="registro.html" class="boton">
-Comenzar Ahora
-</a>
+        <section id="beneficios">
+            <p class="section-label">POR QUÉ SPORTCLUB</p>
+            <h2>Todo lo que necesitas para avanzar</h2>
+            <p class="section-description">
+                Una experiencia deportiva diseñada para ayudarte a alcanzar tus metas.
+            </p>
 
-</section>
+            <div class="contenedor-cards">
+                <article class="card">
+                    <span class="card-number">01</span>
+                    <h3>Entrenamiento Personalizado</h3>
+                    <p>Accede a clases y rutinas diseñadas para mejorar tu condición física.</p>
+                </article>
 
-<section id="beneficios">
+                <article class="card">
+                    <span class="card-number">02</span>
+                    <h3>Reservas Deportivas</h3>
+                    <p>Organiza tus actividades y revisa fácilmente tus horarios.</p>
+                </article>
 
-<h2>Beneficios</h2>
+                <article class="card">
+                    <span class="card-number">03</span>
+                    <h3>Seguimiento de Progreso</h3>
+                    <p>Visualiza tus avances y mantén la motivación para alcanzar tus metas.</p>
+                </article>
+            </div>
+        </section>
 
-<div class="contenedor-cards">
+        <section class="planes" id="planes">
+            <p class="section-label">ELIGE TU PLAN</p>
+            <h2>Entrena a tu manera</h2>
 
-<div class="card">
-<h3>Entrenamiento Personalizado</h3>
-<p>Accede a clases y rutinas diseñadas para mejorar tu condición física.</p>
-</div>
+            <div class="contenedor-cards">
+                <article class="card plan-card">
+                    <h3>Plan Básico</h3>
+                    <p class="precio">$9.990</p>
+                    <p>Acceso a clases grupales y reservas básicas.</p>
+                    <a href="registro.html" class="plan-button">Elegir Plan</a>
+                </article>
 
-<div class="card">
-<h3>Reservas Deportivas</h3>
-<p>Organiza tus actividades y revisa tus horarios de entrenamiento.</p>
-</div>
+                <article class="card plan-card destacado">
+                    <span class="popular">MÁS POPULAR</span>
+                    <h3>Plan Premium</h3>
+                    <p class="precio">$19.990</p>
+                    <p>Acceso completo a clases, reservas y seguimiento deportivo.</p>
+                    <a href="registro.html" class="plan-button">Elegir Plan</a>
+                </article>
 
-<div class="card">
-<h3>Seguimiento de Progreso</h3>
-<p>Visualiza tus avances y mantén la motivación para alcanzar tus metas.</p>
-</div>
+                <article class="card plan-card">
+                    <h3>Plan Elite</h3>
+                    <p class="precio">$29.990</p>
+                    <p>Entrenamiento avanzado, asesoría personalizada y prioridad.</p>
+                    <a href="registro.html" class="plan-button">Elegir Plan</a>
+                </article>
+            </div>
+        </section>
 
-</div>
+        <section class="sobre" id="sobre">
+            <div class="sobre-intro">
+                <p class="section-label">NUESTRA IDENTIDAD</p>
+                <h2>Sobre SportClub</h2>
+                <p>
+                    Unimos deporte y tecnología para crear una experiencia moderna,
+                    organizada y enfocada en el bienestar.
+                </p>
+            </div>
 
-</section>
+            <div class="sobre-grid">
+                <article>
+                    <h3>Historia</h3>
+                    <p>
+                        SportClub nace con el propósito de acercar el deporte y la
+                        tecnología a las personas.
+                    </p>
+                </article>
 
-<section class="planes" id="planes">
+                <article>
+                    <h3>Misión</h3>
+                    <p>
+                        Promover el bienestar físico y mental mediante entrenamientos
+                        deportivos y tecnología.
+                    </p>
+                </article>
 
-<h2>Planes</h2>
+                <article>
+                    <h3>Visión</h3>
+                    <p>
+                        Ser el club deportivo referente en innovación y transformación
+                        personal.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-<div class="contenedor-cards">
+        <section class="contacto" id="contacto">
+            <div>
+                <p class="section-label">HABLEMOS</p>
+                <h2>Comienza tu transformación</h2>
+                <p>¿Tienes preguntas? Nuestro equipo está listo para ayudarte.</p>
+            </div>
 
-<div class="card">
-<h3>Plan Básico</h3>
-<p class="precio">$9.990</p>
-<p>Acceso a clases grupales y reservas básicas.</p>
-</div>
+            <div class="contact-details">
+                <p><strong>Correo:</strong> contacto@sportclub.cl</p>
+                <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+                <p><strong>Redes:</strong> Instagram · Facebook · TikTok</p>
+            </div>
+        </section>
 
-<div class="card">
-<h3>Plan Premium</h3>
-<p class="precio">$19.990</p>
-<p>Acceso completo a clases, reservas y seguimiento deportivo.</p>
-</div>
+    </main>
 
-<div class="card">
-<h3>Plan Elite</h3>
-<p class="precio">$29.990</p>
-<p>Entrenamiento avanzado, asesoría personalizada y prioridad en reservas.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="sobre">
-
-<h2>Sobre el Club</h2>
-
-<h3>Historia</h3>
-<p>
-SportClub nace con el propósito de acercar el deporte y la tecnología a las personas,
-entregando una experiencia moderna para entrenar, reservar clases y mejorar el bienestar.
-</p>
-
-<h3>Misión</h3>
-<p>
-Promover el bienestar físico y mental mediante entrenamientos deportivos y tecnología
-aplicada al seguimiento de usuarios.
-</p>
-
-<h3>Visión</h3>
-<p>
-Ser el club deportivo referente en innovación y transformación personal.
-</p>
-
-</section>
-
-<section class="contacto" id="contacto">
-
-<h2>Contacto</h2>
-
-<p>Correo: contacto@sportclub.cl</p>
-<p>Teléfono: +56 9 1234 5678</p>
-<p>Redes sociales: Instagram | Facebook | TikTok</p>
-
-</section>
-
-</main>
-
-<footer>
-
-<p>Correo: contacto@sportclub.cl</p>
-<p>Teléfono: +56 9 1234 5678</p>
-<p>Redes sociales: Instagram | Facebook | TikTok</p>
-<p>© 2026 SportClub - Todos los derechos reservados.</p>
-
-</footer>
+    <footer>
+        <img src="./assets/logo_empresa_letra_v1.png" alt="SportClub">
+        <p>© 2026 SportClub - Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 
