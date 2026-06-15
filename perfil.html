@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - SportClub</title>
+    <link rel="stylesheet" href="./css/style_dashboard_usuario.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./assets/logo_empresa_letra_v1.png" alt="SportClub">
+        </div>
+
+        <nav>
+            <a href="dashboard_usuario.html">Inicio</a>
+            <a href="perfil.html" class="active">Mi Perfil</a>
+            <a href="login.html" id="logoutButton">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Mi Perfil</h1>
+            <p>Gestiona tu información personal.</p>
+
+            <p><strong>Nombre:</strong> <span id="profileName"></span></p>
+            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+            <p><strong>Rol:</strong> <span id="profileRole"></span></p>
+            <p><strong>Fecha de nacimiento:</strong> <span id="profileBirthDate"></span></p>
+        </section>
+
+        <section>
+            <h2>Editar Perfil</h2>
+
+            <form id="profileForm">
+
+                <label for="fullName">Nombre completo:</label>
+                <input type="text" id="fullName">
+                <small id="fullNameError"></small>
+
+                <label for="birthDate">Fecha de nacimiento:</label>
+                <input type="date" id="birthDate">
+                <small id="birthDateError"></small>
+
+                <button type="submit">Guardar cambios</button>
+
+            </form>
+
+            <p id="profileMessage"></p>
+        </section>
+
+        <section>
+            <h2>Cambiar contraseña</h2>
+
+            <form id="passwordForm">
+
+                <label for="currentPassword">Contraseña actual:</label>
+                <input type="password" id="currentPassword">
+                <small id="currentPasswordError"></small>
+
+                <label for="newPassword">Nueva contraseña:</label>
+                <input type="password" id="newPassword">
+                <small id="newPasswordError"></small>
+
+                <label for="confirmPassword">Confirmar contraseña:</label>
+                <input type="password" id="confirmPassword">
+                <small id="confirmPasswordError"></small>
+
+                <button type="submit">Cambiar contraseña</button>
+
+            </form>
+
+            <p id="passwordMessage"></p>
+        </section>
+
+    </main>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/perfil.js"></script>
+
+</body>
+
+</html>
