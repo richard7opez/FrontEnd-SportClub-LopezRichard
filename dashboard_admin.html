@@ -2,100 +2,116 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard Administrador - SportClub</title>
-
-<link rel="stylesheet" href="./css/style_dashboard_admin.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios - SportClub</title>
+    <link rel="stylesheet" href="./css/style_dashboard_admin.css">
 </head>
 
 <body>
 
-<header>
+    <header>
+        <div class="logo">
+            <img src="./assets/logo_empresa_letra_v1.png" alt="SportClub">
+        </div>
 
-<div class="logo">
-<img src="./assets/logo_empresa_letra_v1.png" alt="SportClub">
-</div>
+        <nav>
+            <a href="#" class="active">Usuarios</a>
+            <a href="#">Reportes</a>
+            <a href="#">Configuración</a>
+            <a href="#">Clases</a>
+            <a href="login.html" id="logoutButton">Cerrar Sesión</a>
+        </nav>
+    </header>
 
-<nav>
-<a href="#">Usuarios</a>
-<a href="#">Reportes</a>
-<a href="#">Configuración</a>
-<a href="#">Clases</a>
-<a href="login.html">Cerrar Sesión</a>
-</nav>
+    <main>
 
-</header>
+        <section class="estadisticas">
+            <div class="card">
+                <h2 id="totalUsers">0</h2>
+                <p>Total Usuarios</p>
+            </div>
 
-<main>
+            <div class="card">
+                <h2 id="totalCoaches">0</h2>
+                <p>Total Coaches</p>
+            </div>
 
-<section class="estadisticas">
+            <div class="card">
+                <h2 id="totalAdmins">0</h2>
+                <p>Total Administradores</p>
+            </div>
+        </section>
 
-<div class="card">
-<h2>250</h2>
-<p>Total Usuarios</p>
-</div>
+        <section>
+            <h1>Gestión de Usuarios</h1>
+            <p>Administra los usuarios del sistema.</p>
 
-<div class="card">
-<h2>15</h2>
-<p>Total Coaches</p>
-</div>
+            <button type="button" id="newUserButton">
+                + Nuevo Usuario
+            </button>
 
-<div class="card">
-<h2>30</h2>
-<p>Total Clases</p>
-</div>
+            <p id="adminMessage"></p>
 
-</section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre completo</th>
+                        <th>Email</th>
+                        <th>Rol</th>
+                        <th>Fecha Registro</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
 
-<section>
+                <tbody id="usersTableBody">
+                </tbody>
+            </table>
+        </section>
 
-<h2>Usuarios Registrados</h2>
+        <section id="userFormSection" hidden>
+            <h2 id="formTitle">Nuevo Usuario</h2>
 
-<table>
+            <form id="userForm">
 
-<tr>
-<th>RUT</th>
-<th>Nombre</th>
-<th>Rol</th>
-<th>Estado</th>
-<th>Fecha Registro</th>
-</tr>
+                <input type="hidden" id="userId">
 
-<tr><td>12.345.678-9</td><td>Juan Pérez</td><td>Usuario</td><td>Activo</td><td>01/06/2026</td></tr>
-<tr><td>11.222.333-4</td><td>María Soto</td><td>Coach</td><td>Activo</td><td>02/06/2026</td></tr>
-<tr><td>15.444.555-6</td><td>Carlos Díaz</td><td>Usuario</td><td>Activo</td><td>03/06/2026</td></tr>
-<tr><td>18.777.888-9</td><td>Ana Torres</td><td>Administrador</td><td>Activo</td><td>04/06/2026</td></tr>
-<tr><td>19.999.000-1</td><td>Pedro Rojas</td><td>Usuario</td><td>Inactivo</td><td>05/06/2026</td></tr>
+                <label for="fullName">Nombre completo:</label>
+                <input type="text" id="fullName">
+                <small id="fullNameError"></small>
 
-</table>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <small id="emailError"></small>
 
-</section>
+                <label for="role">Rol:</label>
+                <select id="role">
+                    <option value="user">Usuario</option>
+                    <option value="coach">Coach</option>
+                    <option value="admin">Administrador</option>
+                </select>
 
-<section>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password">
+                <small id="passwordError"></small>
 
-<h2>Reportes</h2>
+                <label for="confirmPassword">Confirmar contraseña:</label>
+                <input type="password" id="confirmPassword">
+                <small id="confirmPasswordError"></small>
 
-<ul>
-<li>Clase más solicitada: Crossfit</li>
-<li>Usuarios activos: 210</li>
-<li>Reservas del día: 48</li>
-</ul>
+                <br><br>
 
-</section>
+                <button type="submit">Guardar Usuario</button>
+                <button type="button" id="cancelButton">Cancelar</button>
 
-<section>
+            </form>
+        </section>
 
-<h2>Configuración Rápida</h2>
+    </main>
 
-<button>Crear Usuario</button>
-<button>Editar Sistema</button>
-<button>Configuración</button>
-
-</section>
-
-</main>
+    <script src="./js/config.js"></script>
+    <script src="./js/dashboard_admin.js"></script>
 
 </body>
 
