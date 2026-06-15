@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f4f8;
+    font-family: Arial, sans-serif;
+    color: #1d1d2e;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background: #1d1d2e;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: #f5c542;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 24px;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #1d1d2e;
+}
+
+small {
+    display: block;
+    min-height: 18px;
+    margin-top: 4px;
+}
+
+button {
+    margin-top: 14px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #1d1d2e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #34344d;
+}
+
+#profileMessage,
+#passwordMessage {
+    min-height: 20px;
+    font-weight: bold;
+}
