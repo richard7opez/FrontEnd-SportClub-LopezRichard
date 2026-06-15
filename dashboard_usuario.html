@@ -2,89 +2,92 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard Usuario - SportClub</title>
-<link rel="stylesheet" href="./css/style_dashboard_usuario.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Usuario - SportClub</title>
+    <link rel="stylesheet" href="./css/style_dashboard_usuario.css">
 </head>
 
 <body>
 
-<header>
-<div class="logo">
-<img src="./assets/logo_empresa_letra_v1.png" alt="SportClub">
-</div>
+    <header>
+        <div class="logo">
+            <img src="./assets/logo_empresa_letra_v1.png" alt="SportClub">
+        </div>
 
-<nav>
-<a href="#">Inicio</a>
-<a href="#">Reservas</a>
-<a href="#">Clases</a>
-<a href="#">Mi Perfil</a>
-<a href="login.html">Cerrar Sesión</a>
-</nav>
-</header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Reservas</a>
+            <a href="#">Clases</a>
+            <a href="#">Mi Perfil</a>
+            <a href="login.html" id="logoutButton">Cerrar Sesión</a>
+        </nav>
+    </header>
 
-<main>
+    <main>
 
-<section class="bienvenida">
-<h1>Bienvenido Javier</h1>
-<p>Continúa entrenando para alcanzar tus metas.</p>
-</section>
+        <section class="bienvenida">
+            <h1>Bienvenido <span id="nombreUsuario"></span></h1>
+            <p>Continúa entrenando para alcanzar tus metas.</p>
+        </section>
 
-<section>
-<h2>Mis Reservas</h2>
+        <section>
+            <h2>Mis Reservas</h2>
 
-<table>
-<tr>
-<th>Clase</th>
-<th>Día</th>
-<th>Hora</th>
-<th>Coach</th>
-</tr>
+            <table>
+                <tr>
+                    <th>Clase</th>
+                    <th>Día</th>
+                    <th>Hora</th>
+                    <th>Coach</th>
+                </tr>
 
-<tr><td>Funcional</td><td>Lunes</td><td>19:00</td><td>Andrés</td></tr>
-<tr><td>Yoga</td><td>Martes</td><td>18:00</td><td>Camila</td></tr>
-<tr><td>Crossfit</td><td>Miércoles</td><td>20:00</td><td>Felipe</td></tr>
-<tr><td>Running</td><td>Jueves</td><td>07:00</td><td>Daniela</td></tr>
-<tr><td>Spinning</td><td>Viernes</td><td>19:30</td><td>Marcos</td></tr>
-</table>
-</section>
+                <tr><td>Funcional</td><td>Lunes</td><td>19:00</td><td>Andrés</td></tr>
+                <tr><td>Yoga</td><td>Martes</td><td>18:00</td><td>Camila</td></tr>
+                <tr><td>Crossfit</td><td>Miércoles</td><td>20:00</td><td>Felipe</td></tr>
+                <tr><td>Running</td><td>Jueves</td><td>07:00</td><td>Daniela</td></tr>
+                <tr><td>Spinning</td><td>Viernes</td><td>19:30</td><td>Marcos</td></tr>
+            </table>
+        </section>
 
-<section>
-<h2>Clases Disponibles</h2>
+        <section>
+            <h2>Clases Disponibles</h2>
 
-<div class="contenedor-cards">
+            <div class="contenedor-cards">
 
-<article class="card">
-<h3>Funcional</h3>
-<p>Entrenamiento de fuerza y resistencia.</p>
-<a href="#">Reservar</a>
-</article>
+                <article class="card">
+                    <h3>Funcional</h3>
+                    <p>Entrenamiento de fuerza y resistencia.</p>
+                    <a href="#">Reservar</a>
+                </article>
 
-<article class="card">
-<h3>Yoga</h3>
-<p>Flexibilidad, respiración y bienestar.</p>
-<a href="#">Ver más</a>
-</article>
+                <article class="card">
+                    <h3>Yoga</h3>
+                    <p>Flexibilidad, respiración y bienestar.</p>
+                    <a href="#">Ver más</a>
+                </article>
 
-<article class="card">
-<h3>Spinning</h3>
-<p>Entrenamiento cardiovascular intenso.</p>
-<a href="#">Inscribirse</a>
-</article>
+                <article class="card">
+                    <h3>Spinning</h3>
+                    <p>Entrenamiento cardiovascular intenso.</p>
+                    <a href="#">Inscribirse</a>
+                </article>
 
-</div>
-</section>
+            </div>
+        </section>
 
-<section class="perfil">
-<h2>Perfil Rápido</h2>
-<p><strong>Nombre:</strong> Javier Morales</p>
-<p><strong>Correo:</strong> javier@sportclub.cl</p>
-<p><strong>Edad:</strong> 28 años</p>
-<p><strong>Deporte favorito:</strong> Running</p>
-</section>
+        <section class="perfil">
+            <h2>Perfil Rápido</h2>
+            <p><strong>Nombre:</strong> <span id="perfilNombre"></span></p>
+            <p><strong>Correo:</strong> <span id="perfilCorreo"></span></p>
+            <p><strong>Rol:</strong> <span id="perfilRol"></span></p>
+            <p><strong>Fecha de nacimiento:</strong> <span id="perfilNacimiento"></span></p>
+        </section>
 
-</main>
+    </main>
+
+    <script src="./js/dashboard_usuario.js"></script>
 
 </body>
+
 </html>
